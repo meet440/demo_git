@@ -1,8 +1,63 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<div class="card" role="main" aria-labelledby="pageTitle">
+    <div class="header">
+        <h1 id="pageTitle" class="title">Student Master — Mark Sheet</h1>
+        <p class="subtitle">Simple, clean and centered layout for quick viewing.</p>
+    </div>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <div class="table-wrap" aria-live="polite">
+        <table class="styled" role="table">
+            <caption>Marks for semester</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Subject</th>
+                    <th scope="col">Meet</th>
+                    <th scope="col">Keval</th>
+                    <th scope="col">Harshil</th>
+                    <th scope="col">Priya</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Python</td>
+                    <td>80</td>
+                    <td>89</td>
+                    <td>86</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>89</td>
+                    <td>82</td>
+                    <td>90</td>
+                    <td>88</td>
+                </tr>
+                <tr>
+                    <td>Web Program</td>
+                    <td>90</td>
+                    <td>89</td>
+                    <td>88</td>
+                    <td>87</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Total</th>
+                    <th>259</th>
+                    <th>260</th>
+                    <th>264</th>
+                    <th>260</th>
+                </tr>
+                <tr>
+                    <th>Average</th>
+                    <th>86.33</th>
+                    <th>86.67</th>
+                    <th>88.00</th>
+                    <th>86.67</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
 </div>
